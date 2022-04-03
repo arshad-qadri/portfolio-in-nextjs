@@ -17,6 +17,28 @@ const Contact = () => {
             colorText="Me"
             desc="This is how you can reach me..."
           />
+          <div className="contacts">
+            <div className="row gy-3">
+              <div className="col-lg-6 col-md-6 col-sm-12">
+                <a href="mailto:arshadqadri321@gmail.com">
+                  <span>Email : </span>arshadqadri321@gmail.com
+                </a>
+              </div>
+              <div className="col-lg-6 col-md-6 col-sm-12">
+                <a href="tel:8007330423">
+                  {" "}
+                  <span>Phone : </span> +918007330423{" "}
+                </a>
+              </div>
+              <div className="col-lg-12 col-md-12 col-sm-12">
+                <a href="#">
+                  {" "}
+                  <span>Address : </span> Prakshnagar, Kupwad road, Sangli
+                  416416.{" "}
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

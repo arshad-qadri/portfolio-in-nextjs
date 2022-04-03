@@ -7,33 +7,33 @@ const Mywork = () => {
   const myWorks = [
     {
       image: "crm.png",
-      gitLink: "/",
-      live: "/",
+      gitLink: "https://github.com/arshad-qadri/nextjs-crm-frontend",
+      live: "https://crm-frontend-01.netlify.app",
     },
     {
       image: "filtertable.png",
-      gitLink: "/",
-      live: "/",
+      gitLink: "https://github.com/arshad-qadri/filter-table-data",
+      live: "https://dhzyl.csb.app",
     },
     {
       image: "Github-User.png",
-      gitLink: "/",
-      live: "/",
+      gitLink: "https://github.com/arshad-qadri/github-user",
+      live: "https://oione.sse.codesandbox.io",
     },
     {
       image: "randomejoke.png",
-      gitLink: "/",
-      live: "/",
+      gitLink: "https://github.com/arshad-qadri/Random-Jokes",
+      live: "https://random-joke-react.herokuapp.com",
     },
     {
       image: "reactportfolio.png",
-      gitLink: "/",
-      live: "/",
+      gitLink: "https://github.com/arshad-qadri/React-Portfolio",
+      live: "https://react-arshad-portfolio.herokuapp.com",
     },
     {
       image: "URL Source.png",
-      gitLink: "/",
-      live: "/",
+      gitLink: "https://github.com/arshad-qadri/url-project-frontend",
+      live: "https://my-urlproject.web.app/",
     },
   ];
   return (
@@ -50,24 +50,41 @@ const Mywork = () => {
             colorText="Work"
             desc="Check out some of my projects..."
           />
-          <div className="row">
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="projet bg-danger">
-                <figure>
-                  <Image
-                    src={"/assets/img/crm.png"}
-                    width={"200px"}
-                    height={"200px"}
-                  />
-                </figure>
-                <a href="/" target={"_blank"}>
-                  Live preview
-                </a>
-                <a href="/" target={"_blank"}>
-                  Source code
-                </a>
+          <div className="row gy-3">
+            {myWorks.map((item, ind) => (
+              <div className="col-lg-4 col-md-6 col-sm-12 my-3" key={ind}>
+                <div className="projet">
+                  <figure
+                    style={{
+                      width: "100%",
+                      height: "200px",
+                      position: "relative",
+                    }}
+                  >
+                    <Image
+                      src={`/assets/img/${item.image}`}
+                      layout={"fill"}
+                      objectFit={"cover"}
+                    />
+                  </figure>
+                  <a
+                    className="live-preview"
+                    href={item.live}
+                    target={"_blank"}
+                  >
+                    Live preview
+                  </a>
+
+                  <a
+                    className="source-code"
+                    href={item.gitLink}
+                    target={"_blank"}
+                  >
+                    Source code
+                  </a>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
