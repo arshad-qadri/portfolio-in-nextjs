@@ -36,9 +36,7 @@ const About = () => {
               <div className="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
                 <div className="profile">
                   <Image
-                    src={
-                      "https://i.postimg.cc/9MV9VG86/IMG-20211101-WA0009.jpg"
-                    }
+                    src={"/assets/img/profile.jpg"}
                     width={"250px"}
                     height={"250px"}
                     objectFit={"cover"}

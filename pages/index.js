@@ -1,8 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-const bg =
-  "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80";
+
 export default function Home() {
   return (
     <>
@@ -13,7 +12,7 @@ export default function Home() {
       </Head>
 
       <div className="home">
-        <Image src={bg} layout={"fill"} objectFit={"cover"} />
+        <Image src={"/assets/img/bg.jpg"} layout={"fill"} objectFit={"cover"} />
         <div className="leftside">
           <h1>
             Arshad <span>Qadri</span>

@@ -1,8 +1,41 @@
 import Head from "next/head";
+import Image from "next/image";
 import React from "react";
 import Header from "../components/Header";
 
 const Mywork = () => {
+  const myWorks = [
+    {
+      image: "crm.png",
+      gitLink: "/",
+      live: "/",
+    },
+    {
+      image: "filtertable.png",
+      gitLink: "/",
+      live: "/",
+    },
+    {
+      image: "Github-User.png",
+      gitLink: "/",
+      live: "/",
+    },
+    {
+      image: "randomejoke.png",
+      gitLink: "/",
+      live: "/",
+    },
+    {
+      image: "reactportfolio.png",
+      gitLink: "/",
+      live: "/",
+    },
+    {
+      image: "URL Source.png",
+      gitLink: "/",
+      live: "/",
+    },
+  ];
   return (
     <>
       <Head>
@@ -17,6 +50,25 @@ const Mywork = () => {
             colorText="Work"
             desc="Check out some of my projects..."
           />
+          <div className="row">
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="projet bg-danger">
+                <figure>
+                  <Image
+                    src={"/assets/img/crm.png"}
+                    width={"200px"}
+                    height={"200px"}
+                  />
+                </figure>
+                <a href="/" target={"_blank"}>
+                  Live preview
+                </a>
+                <a href="/" target={"_blank"}>
+                  Source code
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
