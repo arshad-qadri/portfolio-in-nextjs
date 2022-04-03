@@ -6,21 +6,19 @@
 }
 :root {
   --white: #fff;
-  --yelloy: #eece1a;
+  --yellow: #eece1a;
+}
+.main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 .home {
   height: 100vh;
   width: 100%;
-  position: relative;
 }
-.home::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(68, 68, 68, 0.9);
-  z-index: 1;
-}
+
 .leftside {
   position: absolute;
   left: 0;
@@ -33,6 +31,7 @@
   /* align-items: center; */
   padding: 40px;
   flex-direction: column;
+  background: rgba(68, 68, 68, 0.9);
 }
 .leftside h1 {
   font-size: 6rem;
@@ -40,7 +39,7 @@
   color: var(--white);
 }
 .leftside span {
-  color: var(--yelloy);
+  color: var(--yellow);
 }
 .leftside .text {
   padding: 1rem;
@@ -55,7 +54,117 @@
   right: 30px;
   top: 30px;
   color: var(--white);
-  z-index: 3;
+  z-index: 999;
   font-size: 2rem;
   cursor: pointer;
+}
+.menu {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  transition: 0.5s ease all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-side-menu {
+  bottom: 0;
+  left: 0;
+  background-color: rgba(68, 68, 68, 0.801);
+  z-index: 5;
+}
+.right-side-menu {
+  top: 0;
+  right: 0;
+  background-color: #373737c9;
+  z-index: 5;
+}
+.profile {
+  width: 250px;
+  height: 250px;
+  border: 3px solid var(--yellow);
+  border-radius: 50%;
+}
+.profile-img {
+  border-radius: 50%;
+}
+.nav-menu {
+  text-align: center;
+}
+.nav-menu ul li {
+  list-style: none;
+}
+.nav-menu ul li a {
+  display: inline-block;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 0.8rem 0;
+  font-weight: 300;
+  color: var(--white);
+  text-decoration: none;
+}
+.nav-menu ul li a:hover {
+  color: var(--yellow);
+}
+
+/* ===================== about ==================== */
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background: #444;
+  padding: 64px 0;
+}
+
+.header h1 {
+  font-size: 6rem;
+  color: var(--white);
+}
+.header h1 span {
+  color: var(--yellow);
+}
+.header .text {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(73, 73, 73, 0.5);
+}
+.header .text p {
+  color: var(--white);
+  margin: 0;
+  font-size: 24px;
+}
+.detail-text {
+  font-size: 1.5rem;
+}
+.detail-text h5 {
+  font-size: 1.5rem;
+  color: var(--yellow);
+  margin-bottom: 25px;
+}
+.detail-text p {
+  color: var(--white);
+  line-height: 45px;
+}
+.detail-text p span {
+  color: var(--yellow);
+}
+.job-info {
+  background: #515151;
+  padding: 0.5rem;
+  border-bottom: #eece1a 5px solid;
+  color: var(--white);
+}
+.job-info h3 {
+  font-size: 1.17rem;
+}
+.job-info h5 {
+  font-size: 0.67em;
+  margin: 20px 0;
+}
+.job-info p {
+  font-size: 16px;
+}
+.footer {
+  padding: 1rem;
+  background: #2b2b2b;
+  color: var(--white);
 }
