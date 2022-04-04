@@ -65,12 +65,14 @@ const Mywork = () => {
                       src={`/assets/img/${item.image}`}
                       layout={"fill"}
                       objectFit={"cover"}
+                      alt={"projects image"}
                     />
                   </figure>
                   <a
                     className="live-preview"
                     href={item.live}
                     target={"_blank"}
+                    rel="noreferrer"
                   >
                     Live preview
                   </a>
@@ -79,6 +81,7 @@ const Mywork = () => {
                     className="source-code"
                     href={item.gitLink}
                     target={"_blank"}
+                    rel="noreferrer"
                   >
                     Source code
                   </a>

@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <div className="home">
-        <Image src={"/assets/img/bg.jpg"} layout={"fill"} objectFit={"cover"} />
+        <Image src={"/assets/img/bg.jpg"} layout={"fill"} objectFit={"cover"} alt={"bacground"}/>
         <div className="leftside">
           <h1>
             Arshad <span>Qadri</span>
