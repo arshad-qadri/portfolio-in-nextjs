@@ -205,8 +205,10 @@
   width: 100%;
   text-decoration: none;
   color: var(--white);
-  border: 3px solid var(--white);
   height: 150px;
+}
+.contacts .contact {
+  border: 3px solid var(--white);
 }
 .contacts a span {
   color: var(--yellow);
