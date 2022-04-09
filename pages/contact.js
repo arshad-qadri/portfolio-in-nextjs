@@ -34,7 +34,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="col-lg-12 col-md-12 col-sm-12">
-                <div className="w-100 contact bg-danger">
+                <div className="w-100 contact">
                   <a href="#">
                     <span>Address : </span> Prakshnagar, Kupwad road, Sangli
                     416416.

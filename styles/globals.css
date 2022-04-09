@@ -209,6 +209,8 @@
 }
 .contacts .contact {
   border: 3px solid var(--white);
+  padding: 50px;
+  height: 200px;
 }
 .contacts a span {
   color: var(--yellow);
