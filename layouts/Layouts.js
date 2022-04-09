@@ -8,7 +8,7 @@ import Footer from "./Footer";
 
 const Layouts = ({ children }) => {
   const [toggle, setToggle] = useState(false);
-  const router = useRouter()
+  const router = useRouter();
   return (
     <>
       <div className="main">
@@ -19,9 +19,9 @@ const Layouts = ({ children }) => {
         <RightSideMenu toggle={toggle} setToggle={setToggle} />
         {children}
       </div>
-      {router.pathname !== "/" &&
+      {/* {router.pathname !== "/" &&
       <Footer />
-      }
+      } */}
     </>
   );
 };
