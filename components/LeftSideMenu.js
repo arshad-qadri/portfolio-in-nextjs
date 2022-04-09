@@ -1,12 +1,11 @@
-import Image from 'next/image';
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 const LeftSideMenu = ({ toggle }) => {
   return (
     <>
       <div
-        className="left-side-menu menu"
-        style={{ bottom: !toggle ? "-100%" : "0" }}
+        className={`left-side-menu menu ${!toggle && "left-side-menu-hide"}`}
       >
         <div className="profile">
           <Image
@@ -15,7 +14,7 @@ const LeftSideMenu = ({ toggle }) => {
             height={"250px"}
             objectFit={"cover"}
             className="profile-img"
-            alt='profile'
+            alt="profile"
           />
         </div>
       </div>
@@ -23,4 +22,4 @@ const LeftSideMenu = ({ toggle }) => {
   );
 };
 
-export default LeftSideMenu
+export default LeftSideMenu;

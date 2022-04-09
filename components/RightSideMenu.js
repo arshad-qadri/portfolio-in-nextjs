@@ -25,8 +25,7 @@ const RightSideMenu = ({ toggle, setToggle }) => {
   return (
     <>
       <div
-        className="right-side-menu menu"
-        style={{ top: !toggle ? "-100%" : "0" }}
+        className={`right-side-menu menu ${!toggle && "right-side-menu-hide"}`}
       >
         <div className="nav-menu">
           <ul>

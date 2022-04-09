@@ -30,7 +30,11 @@ const About = () => {
       </Head>
       <div className="page">
         <div className="container">
-          <Header text="About" colorText="Me" desc="Let me tell you a few things..."/>
+          <Header
+            text="About"
+            colorText="Me"
+            desc="Let me tell you a few things..."
+          />
           <div className="details">
             <div className="row">
               <div className="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
@@ -63,7 +67,7 @@ const About = () => {
                   </p>
                 </div>
               </div>
-              <div className="row my-4">
+              <div className="row gy-4 mx-0">
                 {jobs.map((item, ind) => (
                   <div className="col-lg-4 col-sm-12" key={ind}>
                     <div className="job-info">

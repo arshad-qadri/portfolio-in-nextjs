@@ -19,25 +19,25 @@ const Contact = () => {
           />
           <div className="contacts">
             <div className="row gy-3">
-              <div className="col-lg-6 col-md-6 col-sm-12">
+              <div className="col-lg-6 col-md-12 col-sm-12">
                 <div className="w-100 contact">
                   <a href="mailto:arshadqadri321@gmail.com">
-                    <span>Email : </span>arshadqadri321@gmail.com
+                    <span>Email : </span>&nbsp; arshadqadri321@gmail.com
                   </a>
                 </div>
               </div>
-              <div className="col-lg-6 col-md-6 col-sm-12">
+              <div className="col-lg-6 col-md-12 col-sm-12">
                 <div className="w-100 contact">
                   <a href="tel:8007330423">
-                    <span>Phone : </span> +918007330423
+                    <span>Phone : </span>&nbsp; +918007330423
                   </a>
                 </div>
               </div>
               <div className="col-lg-12 col-md-12 col-sm-12">
                 <div className="w-100 contact">
                   <a href="#">
-                    <span>Address : </span> Prakshnagar, Kupwad road, Sangli
-                    416416.
+                    <span>Address : </span>&nbsp; Prakshnagar, Kupwad road,
+                    Sangli 416416.
                   </a>
                 </div>
               </div>

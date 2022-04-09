@@ -10,7 +10,7 @@
 }
 .main {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -79,6 +79,12 @@
   background-color: #373737de;
   z-index: 5;
 }
+.left-side-menu-hide {
+  bottom: -100%;
+}
+.right-side-menu-hide {
+  top: -100%;
+}
 .profile {
   width: 250px;
   height: 250px;
@@ -110,9 +116,10 @@
 /* ===================== about ==================== */
 .page {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background: #444;
   padding: 64px 0;
+  overflow-y: auto;
 }
 
 .header h1 {
@@ -203,15 +210,51 @@
 }
 .contacts a {
   width: 100%;
+  height: 100%;
   text-decoration: none;
   color: var(--white);
-  height: 150px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
 .contacts .contact {
   border: 3px solid var(--white);
-  padding: 50px;
-  height: 200px;
+  height: 100px;
 }
 .contacts a span {
   color: var(--yellow);
+}
+.contacts .contact a:hover {
+  background: var(--yellow);
+  color: #000;
+}
+.contacts .contact a:hover span {
+  color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+  .contacts a {
+    font-size: 15px;
+  }
+  .header h1 {
+    font-size: 3rem;
+  }
+  .menu {
+    width: 100%;
+    height: 50%;
+  }
+  .left-side-menu {
+    top: 0 !important;
+  }
+  .right-side-menu {
+    top: 50% !important;
+  }
+  .right-side-menu-hide {
+    right: -100%;
+  }
+  .left-side-menu-hide {
+    left: -100%;
+  }
 }
