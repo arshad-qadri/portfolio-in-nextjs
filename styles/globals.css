@@ -261,4 +261,7 @@
   .left-side-menu-hide {
     left: -100%;
   }
+  .leftside h1 {
+    font-size: 4rem;
+  }
 }
