@@ -37,6 +37,9 @@ const Mywork = () => {
       live: "https://my-urlproject.web.app/",
     },
   ];
+ const myLoader = ({ src }) => {
+   return `${src}`;
+ };
   return (
     <>
       <Head>
@@ -66,6 +69,7 @@ const Mywork = () => {
                       <Image
                         src={`/assets/img/${item.image}`}
                         layout={"fill"}
+                        loader={myLoader}
                         objectFit={"cover"}
                         alt={"projects image"}
                       />
