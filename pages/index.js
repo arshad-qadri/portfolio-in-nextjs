@@ -3,6 +3,9 @@ import Head from "next/head";
 import Image from "next/image";
 
 export default function Home() {
+  const myLoader = ({ src }) => {
+    return `${src}`;
+  };
   return (
     <>
       <Head>
@@ -12,7 +15,13 @@ export default function Home() {
       </Head>
 
       <div className="home">
-        <Image src={"/assets/img/bg.jpg"} layout={"fill"} objectFit={"cover"} alt={"bacground"}/>
+        <Image
+          src={"/assets/img/bg.jpg"}
+          loader={myLoader}
+          layout={"fill"}
+          objectFit={"cover"}
+          alt={"bacground"}
+        />
         <div className="leftside">
           <h1>
             Arshad <span>Qadri</span>

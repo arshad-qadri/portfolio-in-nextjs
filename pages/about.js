@@ -22,6 +22,9 @@ const About = () => {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perferendis totam enim. Nesciunt porro dolores expedita dolor necessitatibus deserunt nemo.",
     },
   ];
+  const myLoader = ({ src }) => {
+    return `${src}`;
+  };
   return (
     <>
       <Head>
@@ -43,6 +46,7 @@ const About = () => {
                   <div className="profile">
                     <Image
                       src={"/assets/img/profile.jpg"}
+                      loader={myLoader}
                       width={"250px"}
                       height={"250px"}
                       objectFit={"cover"}
