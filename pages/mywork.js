@@ -37,10 +37,11 @@ const Mywork = () => {
       live: "https://my-urlproject.web.app/",
     },
   ];
- const myLoader = ({ src }) => {
-   return `${src}`;
- };
-  return (
+  const myLoader = ({ src }) => {
+    return `${src}`;
+  };
+  //api.urlbox.io/v1/T6LcLYJSQb9WkOPJ/png?url=${websiteUrl}
+  https: return (
     <>
       <Head>
         <title>Portfolio | My work</title>
@@ -73,6 +74,13 @@ const Mywork = () => {
                         objectFit={"cover"}
                         alt={"projects image"}
                       />
+                      {/* <Image
+                        src={`https://api.apiflash.com/v1/urltoimage?access_key=212e6657f9d84dffb90369c555e1eda2&wait_until=page_loaded&url=${item.live}&width=410`}
+                        layout={"fill"}
+                        loader={myLoader}
+                        objectFit={"cover"}
+                        alt={"projects image"}
+                      /> */}
                     </figure>
                     <a
                       className="live-preview"

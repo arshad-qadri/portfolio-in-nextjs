@@ -7,20 +7,22 @@ import Footer from "../layouts/Footer";
 const About = () => {
   const jobs = [
     {
-      workshop: "123 Webshop",
-      designation: "Full Stack Developer",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perferendis totam enim. Nesciunt porro dolores expedita dolor necessitatibus deserunt nemo.",
+      workshop: "7Seasol",
+      designation: "Front-End Developer",
+      text: `August 2021 to February 2022 (7 Months) </br>
+      I have worked as React and Front-end developer at 7Seasol, Surat (Gujarat).`,
     },
     {
-      workshop: "Designers ABC",
+      workshop: "Explarity Solution Pvt Ltd",
       designation: "Front End Developer",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perferendis totam enim. Nesciunt porro dolores expedita dolor necessitatibus deserunt nemo.",
+      text: `March 2022 to continue (Present) </br>
+      I am working as React and Front-end developer at Explarity Solution Pvt Ltd, Sangli (Maharshtra).`,
     },
-    {
-      workshop: "Webworks",
-      designation: "Graphic Designer",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perferendis totam enim. Nesciunt porro dolores expedita dolor necessitatibus deserunt nemo.",
-    },
+    // {
+    //   workshop: "Webworks",
+    //   designation: "Graphic Designer",
+    //   text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perferendis totam enim. Nesciunt porro dolores expedita dolor necessitatibus deserunt nemo.",
+    // },
   ];
   const myLoader = ({ src }) => {
     return `${src}`;
@@ -62,8 +64,8 @@ const About = () => {
                       My self <span>Arshad Qadri </span> I am from Sangli,
                       Maharashtra. I am BCA graduated and passout in 2020.
                       Currently I am working in
-                      <span> Explarity Solution Pvt. Ltd. </span>I have total
-                      experience <span>Six Months </span>+. <br />I have skills
+                      <span> Explarity Solution Pvt. Ltd. </span>I have{" "}
+                      <span>One Year</span> of experience. <br />I have skills
                       <b>
                         {" "}
                         HTML, CSS, Bootstrap, Tailwindcss, Javascript, Reactjs,
@@ -75,11 +77,13 @@ const About = () => {
                 </div>
                 <div className="row gy-4 mx-0 mb-5">
                   {jobs.map((item, ind) => (
-                    <div className="col-lg-4 col-sm-12" key={ind}>
+                    <div className="col-lg-6 col-sm-12" key={ind}>
                       <div className="job-info">
                         <h3>{item.workshop}</h3>
                         <h5> {item.designation} </h5>
-                        <p>{item.text}</p>
+                        <p
+                          dangerouslySetInnerHTML={{ __html: `${item.text}` }}
+                        ></p>
                       </div>
                     </div>
                   ))}
