@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Loader from "../components/Loader";
 
 export default function Home() {
+  const [load,setLoad]=useState(true)
   const myLoader = ({ src }) => {
     return `${src}`;
   };
+  useEffect(() => {    
+    setLoad(false)
+  },[])
+
   return (
     <>
       <Head>
@@ -14,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="home">
+     {!load? <div className="home" >
         <Image
           src={"/assets/img/bg.jpg"}
           loader={myLoader}
@@ -30,7 +36,7 @@ export default function Home() {
             <p>MERN Stack Developer, Frontend Designer</p>
           </div>
         </div>
-      </div>
+      </div>: <Loader/> }
     </>
   );
 }
