@@ -80,9 +80,9 @@ const About = () => {
                        etc.
                      </p> */}
                       <p>
-                        Hello, I'm Arshad Qadri, a dedicated React developer
+                        Hello, I&#39;m Arshad Qadri, a dedicated React developer
                         with a BCA degree from Shivaji University, Kolhapur,
-                        graduated in 2020. Currently, I bring over 2+ years of
+                        graduated in 2020. Currently, I bring over 3.5+ years of
                         valuable experience to the dynamic team at Explarity
                         Solution Pvt Ltd.
                       </p>
