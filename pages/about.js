@@ -10,25 +10,30 @@ const About = () => {
   useEffect(() => {
     setLoad(false);
   }, []);
-  const jobs = [
-    {
-      workshop: "7Seasol",
-      designation: "Front-End Developer",
-      text: `August 2021 to February 2022 (7 Months) </br>
-      I have worked as React and Front-end developer at 7Seasol, Surat (Gujarat).`,
-    },
-    {
-      workshop: "Explarity Solution Pvt Ltd",
-      designation: "Front End Developer",
-      text: `March 2022 to continue (Present) </br>
-      I am working as React and Front-end developer at Explarity Solution Pvt Ltd, Sangli (Maharshtra).`,
-    },
-    // {
-    //   workshop: "Webworks",
-    //   designation: "Graphic Designer",
-    //   text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perferendis totam enim. Nesciunt porro dolores expedita dolor necessitatibus deserunt nemo.",
-    // },
-  ];
+  const jobs =[
+  {
+    "workshop": "7Seasol",
+    "designation": "Front-End Developer",
+    "text": "August 2021 to February 2022 (7 months)\nWorked as a React and Front-End Developer, responsible for building responsive UIs and maintaining web applications using modern front-end technologies like React and Nextjs"
+  },
+  {
+    "workshop": "Explarity Solution Pvt Ltd",
+    "designation": "Front-End Developer",
+    "text": "March 2022 to August 2024 (2 years 6 months)\nHandled complete project development from scratch to production. Integrated RESTful APIs, implemented complex functionalities, and optimized the application for SEO. Worked extensively with React.js & Next.js and other modern tools."
+  },
+  {
+    "workshop": "Technizoit",
+    "designation": "Fullstack Developer",
+    "text": "September 2024 to October 2024 (2 months)\nWorked as a Fullstack Developer using React.js for frontend and Node.js with Express for backend. Handled databases like MongoDB and MySQL."
+  },
+  {
+    "workshop": "Neosoft",
+    "designation": "Software Engineer",
+    "text": "Currently working as a React Developer, focusing on building scalable front-end applications and improving UI/UX performance using modern web technologies."
+  }
+]
+.reverse()
+
   const myLoader = ({ src }) => {
     return `${src}`;
   };
@@ -66,74 +71,12 @@ const About = () => {
                   <div className="col-lg-8 col-md-8 col-sm-12">
                     <div className="detail-text">
                       <h5>BIO</h5>
-                      {/* <p>
-                       My self <span>Arshad Qadri </span> I am from Sangli,
-                       Maharashtra. I am BCA graduated and passout in 2020.
-                       Currently I am working in
-                       <span> Explarity Solution Pvt. Ltd. </span>I have{" "}
-                       <span>One Year</span> of experience. <br />I have skills
-                       <b>
-                         {" "}
-                         HTML, CSS, Bootstrap, Tailwindcss, Javascript, Reactjs,
-                         Nextjs, Redux, Nodejs
-                       </b>{" "}
-                       etc.
-                     </p> */}
-                      <p>
-                        Hello, I&#39;m Arshad Qadri, a dedicated React developer
-                        with a BCA degree from Shivaji University, Kolhapur,
-                        graduated in 2020. Currently, I bring over 3.5+ years of
-                        valuable experience to the dynamic team at Explarity
-                        Solution Pvt Ltd.
-                      </p>
+                     
+                      <p>I&rsquo;m Arshad Qadri, a dedicated React developer with over 3.5 years of experience and a BCA degree from Shivaji University, Kolhapur (2020). I specialize in building fast, responsive, and SEO-friendly web applications using React.js, Next.js, JavaScript, and TypeScript.
 
-                      <p>
-                        My skill set encompasses a wide array of technologies
-                        crucial for modern web development. Proficient in HTML,
-                        CSS, Bootstrap, Tailwind CSS, and Chakra UI, I
-                        specialize in creating visually appealing and responsive
-                        user interfaces. Leveraging tools like Reactstrap, I
-                        ensure the seamless integration of design components.
-                      </p>
+My skill set includes HTML, CSS, Bootstrap, Tailwind CSS, Chakra UI, and Reactstrap for UI development, along with Redux for efficient state management. I also have backend experience using Node.js, Express, and working with databases like MongoDB and MySQL.
 
-                      <p>
-                        At the core of my development expertise is a strong
-                        command of JavaScript and TypeScript, enabling me to
-                        build interactive and dynamic web applications. My
-                        proficiency extends to popular front-end frameworks such
-                        as React.js and Next.js, showcasing my commitment to
-                        staying current in the ever-evolving landscape of web
-                        development.
-                      </p>
-
-                      <p>
-                        In the realm of state management, I leverage the power
-                        of Redux to enhance the performance and maintainability
-                        of complex applications. My versatility extends to the
-                        back end, where I am skilled in Node.js and Express, and
-                        have hands-on experience with databases including
-                        MongoDB and MySQL.
-                      </p>
-
-                      <p>
-                        Beyond crafting robust and efficient applications, I am
-                        well-versed in SEO implementation, ensuring that the
-                        solutions I develop are not only functional but also
-                        optimized for search engines. This holistic approach
-                        underscores my commitment to delivering high-quality,
-                        user-friendly, and discoverable web solutions.
-                      </p>
-
-                      <p>
-                        I thrive in collaborative environments that encourage
-                        innovation, where my passion for pushing the boundaries
-                        of web development can flourish. My journey as a React
-                        developer has equipped me with a diverse skill set and a
-                        proven track record of delivering successful projects. I
-                        am excited about the opportunity to contribute my skills
-                        and enthusiasm to future endeavors in the field of web
-                        development.
-                      </p>
+Passionate about clean code, performance, and user experience, I enjoy contributing to modern web projects that solve real-world problems.</p>
 
                       <p>
                         Thank you for considering my profile. I look forward to
