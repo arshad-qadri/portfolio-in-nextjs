@@ -4,13 +4,13 @@ import Image from "next/image";
 import Loader from "../components/Loader";
 
 export default function Home() {
-  const [load,setLoad]=useState(true)
+  const [load, setLoad] = useState(true);
   const myLoader = ({ src }) => {
     return `${src}`;
   };
-  useEffect(() => {    
-    setLoad(false)
-  },[])
+  useEffect(() => {
+    setLoad(false);
+  }, []);
 
   return (
     <>
@@ -20,23 +20,34 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-     {!load? <div className="home" >
-        <Image
-          src={"/assets/img/bg.jpg"}
-          loader={myLoader}
-          layout={"fill"}
-          objectFit={"cover"}
-          alt={"bacground"}
-        />
-        <div className="leftside">
-          <h1>
-            Arshad <span>Qadri</span>
-          </h1>
-          <div className="text">
-            <p>MERN Stack Developer, Frontend Designer</p>
+      {!load ? (
+        <div className="home">
+          <Image
+            src={"/assets/img/bg.jpg"}
+            loader={myLoader}
+            layout={"fill"}
+            objectFit={"cover"}
+            alt={"bacground"}
+          />
+          <div className="leftside">
+            <h1>
+              Arshad <span>Qadri</span>
+            </h1>
+            <div className="text">
+              <p>MERN Stack Developer, Frontend Designer</p>
+            </div>
+            <a
+              href="/assets/resume/Arshad-React-Resume.pdf"
+              className="download-button"
+              download
+            >
+              Download Resume
+            </a>
           </div>
         </div>
-      </div>: <Loader/> }
+      ) : (
+        <Loader />
+      )}
     </>
   );
 }

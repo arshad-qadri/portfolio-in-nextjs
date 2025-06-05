@@ -7,6 +7,7 @@
 :root {
   --white: #fff;
   --yellow: #eece1a;
+  --black: #000;
 }
 .main {
   width: 100%;
@@ -112,7 +113,24 @@
 .nav-menu ul li a:hover {
   color: var(--yellow);
 }
-
+.download-button {
+  background-color: var(--yellow);
+  width: max-content;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.download-button:hover {
+  color: var(--black);
+  background-color: var(--white);
+  cursor: pointer;
+  transition: 0.4s;
+}
 /* ===================== about ==================== */
 .page {
   width: 100%;
