@@ -1,16 +1,3 @@
-import React from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-
-const containerStyle = {
-  width: "100%",
-  height: "400px",
-};
-
-const center = {
-  lat: 16.867634, // Replace with your latitude
-  lng: 74.570389, // Replace with your longitude
-};
-
 const MyMap = () => {
   return (
     <div style={{ width: "80vw", height: "450px", margin: "10px auto 0 auto" }}>
