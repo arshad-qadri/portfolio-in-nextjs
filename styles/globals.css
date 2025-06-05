@@ -122,7 +122,7 @@
   color: var(--white);
   text-decoration: none;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 .download-button:hover {
@@ -281,6 +281,11 @@
   }
   .leftside h1 {
     font-size: 4rem;
+  }
+  .download-button {
+    padding: 8px 13px;
+    border-radius: 8px;
+    font-size: 16px;
   }
 }
 
