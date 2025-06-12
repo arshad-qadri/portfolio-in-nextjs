@@ -71,15 +71,30 @@ function MyApp({ Component, pageProps }) {
               jobTitle: "Frontend Developer",
               worksFor: {
                 "@type": "Organization",
-                name: "Freelancer",
+                name: "Neosoft Technologies",
+                url: "https://www.neosofttech.com",
               },
-              alumniOf: "Your University Name",
+              alumniOf: {
+                "@type": "CollegeOrUniversity",
+                name: "Chintamanrao Institute of Management Development & Research, Sangli",
+                parentOrganization: {
+                  "@type": "CollegeOrUniversity",
+                  name: "Shivaji University Kolhapur",
+                },
+              },
+              hasCredential: {
+                "@type": "EducationalOccupationalCredential",
+                credentialCategory: "degree",
+                educationalLevel: "Bachelor",
+                name: "Bachelor of Computer Applications (BCA)",
+              },
               description:
-                "Arshad Qadri is a frontend developer with 3.5 years of experience in React.js, Next.js, and modern JavaScript technologies.",
+                "Arshad Qadri is a frontend developer with 3.5 years of experience in React.js, Next.js, and modern JavaScript technologies. Currently working at Neosoft Technologies, Mumbai.",
               email: "mailto:arshadqadri321@gmail.com",
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Sangli",
+                addressLocality: "Mumbai",
+                addressRegion: "MH",
                 addressCountry: "IN",
               },
             }),
