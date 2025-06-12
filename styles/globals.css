@@ -45,6 +45,7 @@
 .leftside .text {
   padding: 1rem;
   background: rgba(73, 73, 73, 0.5);
+  margin-bottom: 20px;
 }
 .leftside .text p {
   font-size: 1.5em;
@@ -266,7 +267,41 @@
   height: 100vh;
   overflow-y: auto;
 }
+.left-container {
+  display: grid;
+  grid-template-columns: 60px auto;
+}
+.devider {
+  width: 2px;
+  height: 100%;
+  border: 1px solid var(--yellow);
+  /* border: 1px solid var(--white); */
+  position: relative;
+}
+.linkedin-icon,
+.github-icon {
+  position: absolute;
+  left: -16px;
+  border-radius: 5px;
+  background-color: var(--black);
+}
+.linkedin-icon:hover,
+.github-icon:hover {
+  background-color: var(--yellow);
+}
+.linkedin-icon {
+  top: -36px;
+}
+.github-icon {
+  bottom: -36px;
+}
 @media only screen and (max-width: 600px) {
+  .leftside {
+    padding: 20px;
+  }
+  .left-container {
+    grid-template-columns: 15px auto;
+  }
   .contacts a {
     font-size: 15px;
   }
@@ -299,6 +334,13 @@
   }
   .typed-text {
     font-size: 20px !important;
+  }
+  .nav-menu ul li a {
+    font-size: 20px;
+  }
+  .profile {
+    width: 179px;
+    height: 179px;
   }
 }
 

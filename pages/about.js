@@ -10,29 +10,28 @@ const About = () => {
   useEffect(() => {
     setLoad(false);
   }, []);
-  const jobs =[
-  {
-    "workshop": "7Seasol",
-    "designation": "Front-End Developer",
-    "text": "August 2021 to February 2022 (7 months)\nWorked as a React and Front-End Developer, responsible for building responsive UIs and maintaining web applications using modern front-end technologies like React and Nextjs"
-  },
-  {
-    "workshop": "Explarity Solution Pvt Ltd",
-    "designation": "Front-End Developer",
-    "text": "March 2022 to August 2024 (2 years 6 months)\nHandled complete project development from scratch to production. Integrated RESTful APIs, implemented complex functionalities, and optimized the application for SEO. Worked extensively with React.js & Next.js and other modern tools."
-  },
-  {
-    "workshop": "Technizoit",
-    "designation": "Fullstack Developer",
-    "text": "September 2024 to October 2024 (2 months)\nWorked as a Fullstack Developer using React.js for frontend and Node.js with Express for backend. Handled databases like MongoDB and MySQL."
-  },
-  {
-    "workshop": "Neosoft",
-    "designation": "Software Engineer",
-    "text": "Currently working as a React Developer, focusing on building scalable front-end applications and improving UI/UX performance using modern web technologies."
-  }
-]
-.reverse()
+  const jobs = [
+    {
+      workshop: "7Seasol",
+      designation: "Front-End Developer",
+      text: "August 2021 to February 2022 (7 months)\nWorked as a React and Front-End Developer, responsible for building responsive UIs and maintaining web applications using modern front-end technologies like React and Nextjs",
+    },
+    {
+      workshop: "Explarity Solution Pvt Ltd",
+      designation: "Front-End Developer",
+      text: "March 2022 to August 2024 (2 years 6 months)\nHandled complete project development from scratch to production. Integrated RESTful APIs, implemented complex functionalities, and optimized the application for SEO. Worked extensively with React.js & Next.js and other modern tools.",
+    },
+    {
+      workshop: "Technizoit",
+      designation: "Fullstack Developer",
+      text: "September 2024 to October 2024 (2 months)\nWorked as a Fullstack Developer using React.js for frontend and Node.js with Express for backend. Handled databases like MongoDB and MySQL.",
+    },
+    {
+      workshop: "Neosoft",
+      designation: "Software Engineer",
+      text: "Currently working as a React Developer, focusing on building scalable front-end applications and improving UI/UX performance using modern web technologies.",
+    },
+  ].reverse();
 
   const myLoader = ({ src }) => {
     return `${src}`;
@@ -58,7 +57,7 @@ const About = () => {
                   <div className="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center align-items-start">
                     <div className="profile">
                       <Image
-                        src={"/assets/img/profile.jpg"}
+                        src={"/assets/img/profile2.jfif"}
                         loader={myLoader}
                         width={"250px"}
                         height={"250px"}
@@ -71,12 +70,22 @@ const About = () => {
                   <div className="col-lg-8 col-md-8 col-sm-12">
                     <div className="detail-text">
                       <h5>BIO</h5>
-                     
-                      <p>I&rsquo;m Arshad Qadri, a dedicated React developer with over 3.5 years of experience and a BCA degree from Shivaji University, Kolhapur (2020). I specialize in building fast, responsive, and SEO-friendly web applications using React.js, Next.js, JavaScript, and TypeScript.
 
-My skill set includes HTML, CSS, Bootstrap, Tailwind CSS, Chakra UI, and Reactstrap for UI development, along with Redux for efficient state management. I also have backend experience using Node.js, Express, and working with databases like MongoDB and MySQL.
-
-Passionate about clean code, performance, and user experience, I enjoy contributing to modern web projects that solve real-world problems.</p>
+                      <p>
+                        I&rsquo;m Arshad Qadri, a dedicated React developer with
+                        over 3.5 years of experience and a BCA degree from
+                        Shivaji University, Kolhapur (2020). I specialize in
+                        building fast, responsive, and SEO-friendly web
+                        applications using React.js, Next.js, JavaScript, and
+                        TypeScript. My skill set includes HTML, CSS, Bootstrap,
+                        Tailwind CSS, Chakra UI, and Reactstrap for UI
+                        development, along with Redux for efficient state
+                        management. I also have backend experience using
+                        Node.js, Express, and working with databases like
+                        MongoDB and MySQL. Passionate about clean code,
+                        performance, and user experience, I enjoy contributing
+                        to modern web projects that solve real-world problems.
+                      </p>
 
                       <p>
                         Thank you for considering my profile. I look forward to

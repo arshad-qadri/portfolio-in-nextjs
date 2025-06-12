@@ -9,7 +9,7 @@ const LeftSideMenu = ({ toggle }) => {
       >
         <div className="profile">
           <Image
-            src={"/assets/img/profile.jpg"}
+            src={"/assets/img/profile2.jfif"}
             width={"250px"}
             height={"250px"}
             objectFit={"cover"}
