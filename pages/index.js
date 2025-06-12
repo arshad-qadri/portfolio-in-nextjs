@@ -4,6 +4,7 @@ import Image from "next/image";
 import Loader from "../components/Loader";
 import ReactTypedComponent from "../components/ReactTyped";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   const [load, setLoad] = useState(true);
@@ -35,20 +36,16 @@ export default function Home() {
             <div className="left-container">
               <div>
                 <div className="devider">
-                  <a
-                    href="https://www.linkedin.com/in/arshad-qadri/"
-                    target="_blank"
-                    className="linkedin-icon"
-                  >
-                    <FaLinkedin size={30} color="#fff" />
-                  </a>
-                  <a
-                    href="https://github.com/arshad-qadri"
-                    target="_blank"
-                    className="github-icon"
-                  >
-                    <FaGithubSquare size={30} color="#fff" />
-                  </a>
+                  <Link href="https://www.linkedin.com/in/arshad-qadri/">
+                    <a target="_blank" className="linkedin-icon" rel="referrer">
+                      <FaLinkedin size={30} color="#fff" />
+                    </a>
+                  </Link>
+                  <Link href="https://github.com/arshad-qadri">
+                    <a target="_blank" className="github-icon" rel="referrer">
+                      <FaGithubSquare size={30} color="#fff" />
+                    </a>
+                  </Link>
                 </div>
               </div>
               <div className="">
