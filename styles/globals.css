@@ -39,7 +39,7 @@
   font-weight: 500;
   color: var(--white);
 }
-.leftside span {
+.leftside .lastname {
   color: var(--yellow);
 }
 .leftside .text {
@@ -113,11 +113,12 @@
 .nav-menu ul li a:hover {
   color: var(--yellow);
 }
+
 .download-button {
   background-color: var(--yellow);
   width: max-content;
   padding: 10px 20px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   border-radius: 10px;
   color: var(--white);
   text-decoration: none;
@@ -130,6 +131,15 @@
   background-color: var(--white);
   cursor: pointer;
   transition: 0.4s;
+}
+/* .play-btn {
+  background: none;
+  border: none;
+  outline: none;
+} */
+.typed-text {
+  color: var(--white) !important;
+  font-size: 30px !important;
 }
 /* ===================== about ==================== */
 .page {
@@ -280,12 +290,15 @@
     left: -100%;
   }
   .leftside h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .download-button {
     padding: 8px 13px;
     border-radius: 8px;
     font-size: 16px;
+  }
+  .typed-text {
+    font-size: 20px !important;
   }
 }
 

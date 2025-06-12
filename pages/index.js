@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Loader from "../components/Loader";
+import { FaPlay } from "react-icons/fa";
+import ReactTypedComponent from "../components/ReactTyped";
 
 export default function Home() {
   const [load, setLoad] = useState(true);
@@ -31,18 +33,24 @@ export default function Home() {
           />
           <div className="leftside">
             <h1>
-              Arshad <span>Qadri</span>
+              Arshad <span className="lastname">Qadri</span>
             </h1>
             <div className="text">
-              <p>MERN Stack Developer, Frontend Designer</p>
+              {/* <p>MERN Stack Developer, Frontend Designer</p> */}
+              <ReactTypedComponent />
             </div>
-            <a
-              href="/assets/resume/Arshad-React-Resume.pdf"
-              className="download-button"
-              download
-            >
-              Download Resume
-            </a>
+            <div className="btn-grp">
+              <a
+                href="/assets/resume/Arshad-React-Resume.pdf"
+                className="download-button"
+                download
+              >
+                Download Resume
+              </a>
+              {/* <button title="Introduction myself" className="play-btn">
+                <FaPlay color="#fff" size={30} />
+              </button> */}
+            </div>
           </div>
         </div>
       ) : (
