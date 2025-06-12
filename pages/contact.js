@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Loader from "../components/Loader";
 import Footer from "../layouts/Footer";
 const MyMap = dynamic(() => import("../components/MyMap"), {
-  ssr: false, // ensures it renders only on the client
+  ssr: false,
 });
 // import MyMap from "../components/MyMap";
 
