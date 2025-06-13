@@ -4,14 +4,19 @@ import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+  const canonicalUrl = `https://arshadqadri.com${
+    router.asPath === "/" ? "" : router.asPath
+  }`;
   return (
     <>
       <Head>
+        <title>Arshad Qadri | Frontend Developer</title>
+        <link rel="canonical" href={canonicalUrl} />
         <link rel="icon" href="/arshad.png" />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Arshad Qadri | Frontend Developer Portfolio</title>
         <meta
           name="description"
           content="Arshad Qadri is a Frontend Developer with 3.5 years of experience in React.js, Next.js, and modern web technologies. Explore his projects and skills."
