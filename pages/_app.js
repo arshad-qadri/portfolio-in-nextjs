@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           property="og:image"
-          content="https://arshadqadri.com/profile2.jfif"
+          content="https://arshadqadri.com/profile.jpg"
         />
 
         {/* Twitter Card */}
@@ -51,7 +51,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           name="twitter:image"
-          content="https://arshadqadri.com/profile2.jfif"
+          content="https://arshadqadri.com/profile.jpg"
         />
 
         {/* JSON-LD Structured Data (Schemas) */}
@@ -63,10 +63,17 @@ function MyApp({ Component, pageProps }) {
               "@type": "Person",
               name: "Arshad Qadri",
               url: "https://arshadqadri.com",
-              image: "https://arshadqadri.com/profile.jpg",
+              image: {
+                "@type": "ImageObject",
+                url: "https://arshadqadri.com/profile.jpg",
+                width: 800,
+                height: 800,
+              },
               sameAs: [
-                "https://www.linkedin.com/in/arshadqadri",
-                "https://github.com/arshadqadri",
+                "https://www.linkedin.com/in/arshad-qadri/",
+                "https://www.instagram.com/arshadraza.01/",
+                "https://github.com/arshad-qadri",
+                "https://www.facebook.com/arshad.qadri.355",
               ],
               jobTitle: "Frontend Developer",
               worksFor: {
