@@ -119,36 +119,6 @@ function MyApp({ Component, pageProps }) {
             }),
           }}
         />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              itemListElement: [
-                {
-                  "@type": "ListItem",
-                  position: 1,
-                  name: "Home",
-                  item: "https://arshadqadri.com/",
-                },
-                {
-                  "@type": "ListItem",
-                  position: 2,
-                  name: "My Work",
-                  item: "https://arshadqadri.com/mywork",
-                },
-                {
-                  "@type": "ListItem",
-                  position: 3,
-                  name: "Contact",
-                  item: "https://arshadqadri.com/contact",
-                },
-              ],
-            }),
-          }}
-        />
       </Head>
 
       <Layouts>
