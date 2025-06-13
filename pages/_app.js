@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layouts from "../layouts/Layouts";
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
