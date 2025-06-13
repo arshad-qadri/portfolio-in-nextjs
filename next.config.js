@@ -7,13 +7,7 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/", // this catches the root path
-        has: [
-          {
-            type: "host",
-            value: "arshad-01.netlify.app",
-          },
-        ],
+        source: "https://arshad-01.netlify.app/", // this catches the root path
         destination: "https://arshadqadri.com/",
         permanent: true,
       },
