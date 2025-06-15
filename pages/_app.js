@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Arshad Qadri | Frontend Developer</title>
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href={canonicalUrl} />
         <link rel="icon" href="/arshad.png" />
         <meta charSet="UTF-8" />
