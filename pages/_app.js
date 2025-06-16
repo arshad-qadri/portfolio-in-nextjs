@@ -19,10 +19,10 @@ function MyApp({ Component, pageProps }) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta
+        {/* <meta
           name="description"
           content="Arshad Qadri is a Frontend Developer with 3.5 years of experience in React.js, Next.js, and modern web technologies. Explore his projects and skills."
-        />
+        /> */}
         <meta
           name="keywords"
           content="Arshad Qadri, React Developer, Frontend Developer, Next.js Developer, JavaScript Developer, Portfolio, Web Developer India"

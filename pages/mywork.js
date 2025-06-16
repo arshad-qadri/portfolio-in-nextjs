@@ -43,7 +43,20 @@ const Mywork = () => {
   https: return (
     <>
       <Head>
-        <title>Portfolio | My work</title>
+        {/* <!-- Meta Title --> */}
+        <title>My Projects | React & Next.js Portfolio by Arshad Qadri</title>
+
+        {/* <!-- Meta Title --> */}
+        <meta
+          name="title"
+          content="My Projects | React & Next.js Portfolio by Arshad Qadri"
+        />
+        {/* <!-- Meta Description --> */}
+        <meta
+          name="description"
+          content="Explore the professional projects I've built using React, Next.js, and Node.js. From dynamic UIs to full-stack applications, see my work in action."
+        />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

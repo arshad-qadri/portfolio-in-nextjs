@@ -17,7 +17,19 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>Portfolio | Contact</title>
+        {/* <!-- Meta Title --> */}
+        <title>Contact Me | Hire Arshad Qadri - React Developer</title>
+        {/* <!-- Meta Title --> */}
+        <meta
+          name="title"
+          content="Contact Me | Hire Arshad Qadri - React Developer"
+        />
+        {/* <!-- Meta Description --> */}
+        <meta
+          name="description"
+          content="Let's work together! Contact Arshad Qadri, a React & Next.js developer, via email or phone. Available for freelance and full-time opportunities."
+        />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

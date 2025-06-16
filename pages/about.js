@@ -39,7 +39,20 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>Portfolio | About</title>
+        {/* <!-- Meta Title --> */}
+        <title>About Me | Arshad Qadri - Frontend Developer in Mumbai</title>
+
+        {/* <!-- Meta Title --> */}
+        <meta
+          name="title"
+          content="About Me | Arshad Qadri - Frontend Developer in Mumbai"
+        />
+        {/* <!-- Meta Description --> */}
+        <meta
+          name="description"
+          content="I'm Arshad Qadri, a frontend developer specializing in React.js and Next.js. Learn more about my journey, education, skills, and development experience."
+        />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

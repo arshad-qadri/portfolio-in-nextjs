@@ -18,6 +18,20 @@ export default function Home() {
   return (
     <>
       <Head>
+        {/* <!-- Meta Title --> */}
+        <title>Arshad Qadri | React & Next.js Developer Portfolio</title>
+
+        {/* <!-- Meta Title --> */}
+        <meta
+          name="title"
+          content="Arshad Qadri | React & Next.js Developer Portfolio"
+        />
+        {/* <!-- Meta Description --> */}
+        <meta
+          name="description"
+          content="Hi, I'm Arshad Qadri — a passionate React and Next.js developer with 3.5 years of experience in building fast, responsive web applications. Check out my portfolio!"
+        />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
