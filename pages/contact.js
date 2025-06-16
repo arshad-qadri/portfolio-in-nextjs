@@ -29,6 +29,41 @@ const Contact = () => {
           name="description"
           content="Let's work together! Contact Arshad Qadri, a React & Next.js developer, via email or phone. Available for freelance and full-time opportunities."
         />
+        <meta
+          name="keywords"
+          content="Contact Arshad Qadri, Hire React Developer, Reach Web Developer, Freelance React Developer, Frontend Developer Pune, Contact Form, Work with Arshad"
+        />
+        {/* <!-- Open Graph --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://arshadqadri.com/contact" />
+        <meta
+          property="og:title"
+          content="Contact Arshad Qadri | React & Next.js Developer"
+        />
+        <meta
+          property="og:description"
+          content="Get in touch with Arshad Qadri for frontend development, freelance work, or collaboration opportunities."
+        />
+        <meta
+          property="og:image"
+          content="https://arshadqadri.com/profile.jpg"
+        />
+
+        {/* <!-- Twitter Card --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://arshadqadri.com/contact" />
+        <meta
+          name="twitter:title"
+          content="Contact Arshad Qadri | React & Next.js Developer"
+        />
+        <meta
+          name="twitter:description"
+          content="Get in touch with Arshad Qadri for frontend development, freelance work, or collaboration opportunities."
+        />
+        <meta
+          name="twitter:image"
+          content="https://arshadqadri.com/profile.jpg"
+        />
 
         <script
           type="application/ld+json"

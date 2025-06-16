@@ -31,6 +31,42 @@ export default function Home() {
           name="description"
           content="Hi, I'm Arshad Qadri — a passionate React and Next.js developer with 3.5 years of experience in building fast, responsive web applications. Check out my portfolio!"
         />
+        <meta
+          name="keywords"
+          content="Arshad Qadri, React Developer, Frontend Developer, Next.js Developer, JavaScript Developer, Web Developer India, Portfolio, Pune Developer, UI Developer"
+        />
+
+        {/* <!-- Open Graph --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://arshadqadri.com/" />
+        <meta
+          property="og:title"
+          content="Arshad Qadri | Frontend Developer Portfolio"
+        />
+        <meta
+          property="og:description"
+          content="Experienced React.js and Next.js developer. Explore Arshad Qadri’s portfolio and skills."
+        />
+        <meta
+          property="og:image"
+          content="https://arshadqadri.com/profile.jpg"
+        />
+
+        {/* <!-- Twitter Card --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://arshadqadri.com/" />
+        <meta
+          name="twitter:title"
+          content="Arshad Qadri | Frontend Developer Portfolio"
+        />
+        <meta
+          name="twitter:description"
+          content="Experienced React.js and Next.js developer. Explore Arshad Qadri’s portfolio and skills."
+        />
+        <meta
+          name="twitter:image"
+          content="https://arshadqadri.com/profile.jpg"
+        />
 
         <script
           type="application/ld+json"

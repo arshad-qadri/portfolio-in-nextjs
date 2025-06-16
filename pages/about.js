@@ -52,6 +52,41 @@ const About = () => {
           name="description"
           content="I'm Arshad Qadri, a frontend developer specializing in React.js and Next.js. Learn more about my journey, education, skills, and development experience."
         />
+        <meta
+          name="keywords"
+          content="Arshad Qadri, About Arshad, Frontend Developer Profile, React Developer Experience, Next.js Developer India, Software Engineer, Web Developer Resume"
+        />
+        {/* <!-- Open Graph --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://arshadqadri.com/about" />
+        <meta
+          property="og:title"
+          content="About Arshad Qadri | React Developer in Pune"
+        />
+        <meta
+          property="og:description"
+          content="Learn about Arshad Qadri’s experience, education, and frontend development journey."
+        />
+        <meta
+          property="og:image"
+          content="https://arshadqadri.com/profile.jpg"
+        />
+
+        {/* <!-- Twitter Card --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://arshadqadri.com/about" />
+        <meta
+          name="twitter:title"
+          content="About Arshad Qadri | React Developer in Pune"
+        />
+        <meta
+          name="twitter:description"
+          content="Learn about Arshad Qadri’s experience, education, and frontend development journey."
+        />
+        <meta
+          name="twitter:image"
+          content="https://arshadqadri.com/profile.jpg"
+        />
 
         <script
           type="application/ld+json"

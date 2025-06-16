@@ -18,48 +18,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/arshad.png" />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        {/* <meta
-          name="description"
-          content="Arshad Qadri is a Frontend Developer with 3.5 years of experience in React.js, Next.js, and modern web technologies. Explore his projects and skills."
-        /> */}
-        <meta
-          name="keywords"
-          content="Arshad Qadri, React Developer, Frontend Developer, Next.js Developer, JavaScript Developer, Portfolio, Web Developer India"
-        />
         <meta name="author" content="Arshad Qadri" />
-
-        {/* Open Graph (Facebook etc.) */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://arshadqadri.com" />
-        <meta
-          property="og:title"
-          content="Arshad Qadri | Frontend Developer Portfolio"
-        />
-        <meta
-          property="og:description"
-          content="Experienced React.js and Next.js developer. Explore Arshad Qadri’s portfolio, projects, and frontend skills."
-        />
-        <meta
-          property="og:image"
-          content="https://arshadqadri.com/profile.jpg"
-        />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://arshadqadri.com" />
-        <meta
-          name="twitter:title"
-          content="Arshad Qadri | Frontend Developer Portfolio"
-        />
-        <meta
-          name="twitter:description"
-          content="Experienced React.js and Next.js developer. Explore Arshad Qadri’s portfolio, projects, and frontend skills."
-        />
-        <meta
-          name="twitter:image"
-          content="https://arshadqadri.com/profile.jpg"
-        />
 
         {/* JSON-LD Structured Data (Schemas) */}
         <script

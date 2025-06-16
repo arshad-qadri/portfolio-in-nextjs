@@ -56,6 +56,41 @@ const Mywork = () => {
           name="description"
           content="Explore the professional projects I've built using React, Next.js, and Node.js. From dynamic UIs to full-stack applications, see my work in action."
         />
+        <meta
+          name="keywords"
+          content="React Projects, Next.js Projects, Arshad Qadri Portfolio, JavaScript Portfolio, Web Development Projects, Frontend Projects, Developer Work Showcase"
+        />
+        {/* <!-- Open Graph --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://arshadqadri.com/projects" />
+        <meta
+          property="og:title"
+          content="React & Next.js Projects | Arshad Qadri Portfolio"
+        />
+        <meta
+          property="og:description"
+          content="Browse projects built using React.js, Next.js, and Node.js. Explore real-world frontend work by Arshad Qadri."
+        />
+        <meta
+          property="og:image"
+          content="https://arshadqadri.com/profile.jpg"
+        />
+
+        {/* <!-- Twitter Card --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://arshadqadri.com/projects" />
+        <meta
+          name="twitter:title"
+          content="React & Next.js Projects | Arshad Qadri Portfolio"
+        />
+        <meta
+          name="twitter:description"
+          content="Browse projects built using React.js, Next.js, and Node.js. Explore real-world frontend work by Arshad Qadri."
+        />
+        <meta
+          name="twitter:image"
+          content="https://arshadqadri.com/profile.jpg"
+        />
 
         <script
           type="application/ld+json"
