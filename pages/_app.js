@@ -6,9 +6,8 @@ import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const canonicalUrl = `https://arshadqadri.com${
-    router.asPath === "/" ? "" : router.asPath
-  }`;
+  const canonicalUrl = `https://arshadqadri.com${router.asPath === "/" ? "" : router.asPath
+    }`;
   console.log("router===", router);
 
   return (
@@ -30,6 +29,7 @@ function MyApp({ Component, pageProps }) {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "Person",
+                "@id": "https://arshadqadri.com/#person",
                 name: "Arshad Qadri",
                 url: "https://arshadqadri.com",
                 image: {
@@ -65,7 +65,7 @@ function MyApp({ Component, pageProps }) {
                   name: "Bachelor of Computer Applications (BCA)",
                 },
                 description:
-                  "Arshad Qadri is a frontend developer with 3.5 years of experience in React.js, Next.js, and modern JavaScript technologies. Currently working at Neosoft Technologies, Mumbai.",
+                  "Arshad Qadri is a frontend developer with 3.8 years of experience in React.js, Next.js, and modern JavaScript technologies. Currently working at Neosoft Technologies, Mumbai.",
                 email: "mailto:arshadqadri321@gmail.com",
                 address: {
                   "@type": "PostalAddress",
@@ -73,9 +73,11 @@ function MyApp({ Component, pageProps }) {
                   addressRegion: "MH",
                   addressCountry: "IN",
                 },
+                knowsAbout: ["React.js", "Next.js", "JavaScript", "Frontend Development"],
               }),
             }}
           />
+
         )}
 
         {router.asPath === "/" && (

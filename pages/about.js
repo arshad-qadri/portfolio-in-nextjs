@@ -97,7 +97,7 @@ const About = () => {
               name: "About Arshad Qadri",
               url: "https://arshadqadri.com/about",
               description:
-                "Learn more about Arshad Qadri, a frontend developer with 3.5 years of experience specializing in React and Next.js.",
+                "Learn more about Arshad Qadri, a frontend developer with 3.8 years of experience specializing in React and Next.js.",
               inLanguage: "en",
               author: {
                 "@type": "Person",
@@ -160,7 +160,7 @@ const About = () => {
 
                       <p>
                         I&rsquo;m Arshad Qadri, a dedicated React developer with
-                        over 3.5 years of experience and a BCA degree from
+                        over 3.8 years of experience and a BCA degree from
                         Shivaji University, Kolhapur (2020). I specialize in
                         building fast, responsive, and SEO-friendly web
                         applications using React.js, Next.js, JavaScript, and

@@ -29,7 +29,7 @@ export default function Home() {
         {/* <!-- Meta Description --> */}
         <meta
           name="description"
-          content="Hi, I'm Arshad Qadri — a passionate React and Next.js developer with 3.5 years of experience in building fast, responsive web applications. Check out my portfolio!"
+          content="Hi, I'm Arshad Qadri — a passionate React and Next.js developer with 3.8 years of experience in building fast, responsive web applications. Check out my portfolio!"
         />
         <meta
           name="keywords"
