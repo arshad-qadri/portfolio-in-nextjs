@@ -113,7 +113,7 @@ const Contact = () => {
             <div className="container">
               <Header
                 text="Contact"
-                colorText="Me"
+                colorText={<span className="text-gradient">Me</span>}
                 desc="This is how you can reach me..."
               />
               <div className="contacts">

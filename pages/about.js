@@ -29,7 +29,12 @@ const About = () => {
     {
       workshop: "Neosoft",
       designation: "Software Engineer",
-      text: "Currently working as a React Developer, focusing on building scalable front-end applications and improving UI/UX performance using modern web technologies.",
+      text: "Acted as a React Developer, focusing on building scalable front-end applications and improving UI/UX performance using modern web technologies.",
+    },
+    {
+      workshop: "Octagon IT LLC",
+      designation: "React Developer",
+      text: "September 09, 2025 to March 31, 2026 (Remotely working)\nDeveloped modern frontend architectures, prioritizing high performance and premium design. Focused on creating responsive and vibrant user interfaces.",
     },
   ].reverse();
 
@@ -136,7 +141,7 @@ const About = () => {
             <div className="container">
               <Header
                 text="About"
-                colorText="Me"
+                colorText={<span className="text-gradient">Me</span>}
                 desc="Let me tell you a few things..."
               />
               <div className="details">
@@ -146,8 +151,8 @@ const About = () => {
                       <Image
                         src={"/assets/img/profile2.jfif"}
                         loader={myLoader}
-                        width={"250px"}
-                        height={"250px"}
+                        width={"240px"}
+                        height={"240px"}
                         objectFit={"cover"}
                         className="profile-img"
                         alt="profile"
@@ -182,12 +187,12 @@ const About = () => {
                   </div>
                   <div className="row gy-4 mx-0 mb-5">
                     {jobs.map((item, ind) => (
-                      <div className="col-lg-6 col-sm-12" key={ind}>
-                        <div className="job-info">
+                      <div className="col-lg-6 col-md-6 col-sm-12" key={ind}>
+                        <div className="job-info glass-card">
                           <h3>{item.workshop}</h3>
                           <h5> {item.designation} </h5>
                           <p
-                            dangerouslySetInnerHTML={{ __html: `${item.text}` }}
+                            dangerouslySetInnerHTML={{ __html: `${item.text.replace(/\n/g, '<br/>')}` }}
                           ></p>
                         </div>
                       </div>

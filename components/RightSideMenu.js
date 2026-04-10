@@ -34,7 +34,7 @@ const RightSideMenu = ({ toggle, setToggle }) => {
                 <Link href={item.link}>
                   <a
                     style={{
-                      color: router.pathname === item.link ? "#eece1a" : "#fff",
+                      color: router.pathname === item.link ? "#8b5cf6" : "var(--text-muted)",
                     }}
                     onClick={() => setToggle(false)}
                   >

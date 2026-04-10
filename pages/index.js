@@ -90,39 +90,30 @@ export default function Home() {
 
       {!load ? (
         <div className="home">
-          <Image
-            src={"/assets/img/bg.jpg"}
-            loader={myLoader}
-            layout={"fill"}
-            objectFit={"cover"}
-            alt={"bacground"}
-          />
           <div className="leftside">
             <div className="left-container">
-              <div>
-                <div className="devider">
+              <div className="social-links">
                   <Link href="https://www.linkedin.com/in/arshad-qadri/">
-                    <a target="_blank" className="linkedin-icon" rel="referrer">
-                      <FaLinkedin size={30} color="#fff" />
+                    <a target="_blank" className="linkedin-icon" rel="noreferrer">
+                      <FaLinkedin size={24} color="#fff" />
                     </a>
                   </Link>
                   <Link href="https://github.com/arshad-qadri">
-                    <a target="_blank" className="github-icon" rel="referrer">
-                      <FaGithubSquare size={30} color="#fff" />
+                    <a target="_blank" className="github-icon" rel="noreferrer">
+                      <FaGithubSquare size={24} color="#fff" />
                     </a>
                   </Link>
-                </div>
               </div>
               <div className="">
                 <h1>
-                  Arshad <span className="lastname">Qadri</span>
+                  Arshad <span className="lastname text-gradient">Qadri</span>
                 </h1>
                 <div className="text">
                   <ReactTypedComponent />
                 </div>
                 <div className="btn-grp">
                   <a
-                    href="/assets/resume/Arshad-React-Resume.pdf"
+                    href="/assets/resume/4_years_reactjs_arshad.pdf"
                     className="download-button"
                     download
                   >

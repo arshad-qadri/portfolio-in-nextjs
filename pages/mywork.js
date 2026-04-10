@@ -140,7 +140,7 @@ const Mywork = () => {
             <div className="container">
               <Header
                 text="My"
-                colorText="Work"
+                colorText={<span className="text-gradient">Work</span>}
                 desc="Check out some of my projects..."
               />
               <div className="row gy-3">
@@ -150,7 +150,7 @@ const Mywork = () => {
                       <figure
                         style={{
                           width: "100%",
-                          height: "200px",
+                          height: "220px",
                           position: "relative",
                         }}
                       >
@@ -161,31 +161,17 @@ const Mywork = () => {
                           objectFit={"cover"}
                           alt={"projects image"}
                         />
-                        {/* <Image
-                        src={`https://api.apiflash.com/v1/urltoimage?access_key=212e6657f9d84dffb90369c555e1eda2&wait_until=page_loaded&url=${item.live}&width=410`}
-                        layout={"fill"}
-                        loader={myLoader}
-                        objectFit={"cover"}
-                        alt={"projects image"}
-                      /> */}
+                        <div className="hover-overlay">
+                          <a
+                            className="live-preview"
+                            href={item.live}
+                            target={"_blank"}
+                            rel="noreferrer"
+                          >
+                            Live preview
+                          </a>
+                        </div>
                       </figure>
-                      <a
-                        className="live-preview"
-                        href={item.live}
-                        target={"_blank"}
-                        rel="noreferrer"
-                      >
-                        Live preview
-                      </a>
-
-                      {/* <a 
-                        className="source-code"
-                        href={item.gitLink}
-                        target={"_blank"}
-                        rel="noreferrer"
-                      >
-                        Source code
-                      </a>*/}
                     </div>
                   </div>
                 ))}
