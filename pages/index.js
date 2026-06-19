@@ -5,6 +5,7 @@ import Loader from "../components/Loader";
 import ReactTypedComponent from "../components/ReactTyped";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import Link from "next/link";
+import { domain } from "../variable";
 
 export default function Home() {
   const [load, setLoad] = useState(true);
@@ -38,7 +39,7 @@ export default function Home() {
 
         {/* <!-- Open Graph --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://arshadqadri.com/" />
+        <meta property="og:url" content={`${domain}`} />
         <meta
           property="og:title"
           content="Arshad Qadri | Frontend Developer Portfolio"
@@ -49,12 +50,12 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://arshadqadri.com/profile.jpg"
+          content={`${domain}/profile.jpg`}
         />
 
         {/* <!-- Twitter Card --> */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://arshadqadri.com/" />
+        <meta name="twitter:url" content={domain} />
         <meta
           name="twitter:title"
           content="Arshad Qadri | Frontend Developer Portfolio"
@@ -65,7 +66,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://arshadqadri.com/profile.jpg"
+          content={`${domain}/profile.jpg`}
         />
 
         <script
@@ -75,7 +76,7 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "WebPage",
               name: "Arshad Qadri | Frontend Developer Portfolio",
-              url: "https://arshadqadri.com/",
+              url: domain,
               description:
                 "Welcome to the official portfolio of Arshad Qadri — a frontend developer experienced in React.js, Next.js, and modern web technologies.",
               inLanguage: "en",

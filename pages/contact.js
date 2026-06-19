@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Loader from "../components/Loader";
 import Footer from "../layouts/Footer";
+import { domain } from "../variable";
 const MyMap = dynamic(() => import("../components/MyMap"), {
   ssr: false,
 });
@@ -35,7 +36,7 @@ const Contact = () => {
         />
         {/* <!-- Open Graph --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://arshadqadri.com/contact" />
+        <meta property="og:url" content={`${domain}/contact`} />
         <meta
           property="og:title"
           content="Contact Arshad Qadri | React & Next.js Developer"
@@ -46,12 +47,12 @@ const Contact = () => {
         />
         <meta
           property="og:image"
-          content="https://arshadqadri.com/profile.jpg"
+          content={`${domain}/profile.jpg`}
         />
 
         {/* <!-- Twitter Card --> */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://arshadqadri.com/contact" />
+        <meta name="twitter:url" content={`${domain}/contact`} />
         <meta
           name="twitter:title"
           content="Contact Arshad Qadri | React & Next.js Developer"
@@ -62,7 +63,7 @@ const Contact = () => {
         />
         <meta
           name="twitter:image"
-          content="https://arshadqadri.com/profile.jpg"
+          content={`${domain}/profile.jpg`}
         />
 
         <script
@@ -72,7 +73,7 @@ const Contact = () => {
               "@context": "https://schema.org",
               "@type": "WebPage",
               name: "Contact Arshad Qadri",
-              url: "https://arshadqadri.com/contact",
+              url: `${domain}/contact`,
               description:
                 "Get in touch with Arshad Qadri for freelance frontend development projects or job opportunities.",
               inLanguage: "en",
@@ -94,13 +95,13 @@ const Contact = () => {
                   "@type": "ListItem",
                   position: 1,
                   name: "Home",
-                  item: "https://arshadqadri.com/",
+                  item: domain,
                 },
                 {
                   "@type": "ListItem",
                   position: 3,
                   name: "Contact",
-                  item: "https://arshadqadri.com/contact",
+                  item: `${domain}/contact`,
                 },
               ],
             }),

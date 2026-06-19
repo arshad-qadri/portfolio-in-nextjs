@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Loader from "../components/Loader";
 import Footer from "../layouts/Footer";
+import { domain } from "../variable";
 
 const About = () => {
   const [load, setLoad] = useState(true);
@@ -58,7 +59,7 @@ const About = () => {
         />
         {/* <!-- Open Graph --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://arshadqadri.com/about" />
+        <meta property="og:url" content={`${domain}/about` }/>
         <meta
           property="og:title"
           content="About Arshad Qadri | React Developer in Pune"
@@ -69,12 +70,12 @@ const About = () => {
         />
         <meta
           property="og:image"
-          content="https://arshadqadri.com/profile.jpg"
+          content={`${domain}/profile.jpg`}
         />
 
         {/* <!-- Twitter Card --> */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://arshadqadri.com/about" />
+        <meta name="twitter:url" content={`${domain}/about`} />
         <meta
           name="twitter:title"
           content="About Arshad Qadri | React Developer in Pune"
@@ -85,7 +86,7 @@ const About = () => {
         />
         <meta
           name="twitter:image"
-          content="https://arshadqadri.com/profile.jpg"
+          content={`${domain}/profile.jpg`}
         />
 
         <script
@@ -95,7 +96,7 @@ const About = () => {
               "@context": "https://schema.org",
               "@type": "WebPage",
               name: "About Arshad Qadri",
-              url: "https://arshadqadri.com/about",
+              url: `${domain}/about`,
               description:
                 "Learn more about Arshad Qadri, a frontend developer with 3.8 years of experience specializing in React and Next.js.",
               inLanguage: "en",
@@ -117,13 +118,13 @@ const About = () => {
                   "@type": "ListItem",
                   position: 1,
                   name: "Home",
-                  item: "https://arshadqadri.com/",
+                  item: domain,
                 },
                 {
                   "@type": "ListItem",
                   position: 2,
                   name: "About",
-                  item: "https://arshadqadri.com/about",
+                  item: `${domain}/about`,
                 },
               ],
             }),

@@ -3,10 +3,11 @@ import Layouts from "../layouts/Layouts";
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { useRouter } from "next/router";
+import { domain } from "../variable";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const canonicalUrl = `https://arshadqadri.com${router.asPath === "/" ? "" : router.asPath
+  const canonicalUrl = `${domain}${router.asPath === "/" ? "" : router.asPath
     }`;
   console.log("router===", router);
 
@@ -29,12 +30,12 @@ function MyApp({ Component, pageProps }) {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "Person",
-                "@id": "https://arshadqadri.com/#person",
+                "@id": `${domain}/#person`,
                 name: "Arshad Qadri",
-                url: "https://arshadqadri.com",
+                url: `${domain}`,
                 image: {
                   "@type": "ImageObject",
-                  url: "https://arshadqadri.com/profile.jpg",
+                  url: `${domain}/profile.jpg`,
                   width: 800,
                   height: 800,
                 },
@@ -88,7 +89,7 @@ function MyApp({ Component, pageProps }) {
                 "@context": "https://schema.org",
                 "@type": "WebSite",
                 name: "Arshad Qadri Portfolio",
-                url: "https://arshadqadri.com",
+                url: `${domain}`,
                 description:
                   "Portfolio website of Arshad Qadri, a frontend developer specializing in React and Next.js.",
                 inLanguage: "en",
