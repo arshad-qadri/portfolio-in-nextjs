@@ -3,7 +3,7 @@ import Layouts from "../layouts/Layouts";
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { useRouter } from "next/router";
-import { domain } from "../variable";
+import { domain, googleSiteVerificationCode } from "../variable";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Arshad Qadri | Frontend Developer</title>
+        <meta name="google-site-verification" content={googleSiteVerificationCode} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={canonicalUrl} />
         <link rel="icon" href="/arshad.png" />
